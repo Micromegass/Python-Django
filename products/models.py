@@ -3,10 +3,10 @@ from django.db import models
 # Create your models here.
 
 class Product (models.Model):
-    title = models.TextField()
-    description = models.TextField()
-    price = models.TextField()
-    summary = models.TextField(default='I really like Python and Django');
+    title = models.CharField(max_length=120) # maxlength is required
+    description = models.TextField(blank=True, null=True)
+    price = models.DecimalField(decimal_places=2, max_digits=10000)
+    summary = models.TextField();
 
 
 
