@@ -16,6 +16,19 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+
+from django.urls import path
+
+from pages.views import home_view
+from pages.views import contact_view
+from pages.views import about_view
+from pages.views import social_view
+
+
 urlpatterns = [
+    url(r'^home', home_view , name='home'),
+    url(r'^contact', contact_view, name='contact'),
+    url(r'^about', about_view, name='about'),
+    url(r'^social', social_view, name='social'),
     url(r'^admin/', admin.site.urls),
 ]
