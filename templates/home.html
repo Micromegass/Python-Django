@@ -1,1 +1,13 @@
-<h1>Home page</h1>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Home page </h1>
+{% endblock %}
+
+
+
+{{request.user.is_authenticated}}
+{{request.user}}
+
+
