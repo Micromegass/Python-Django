@@ -11,7 +11,14 @@ def home_view(request, *args, **kwargs):
 
 
 def about_view(request, *args, **kwargs):
-	return render(request, "about.html", {})
+
+	my_dic = {
+		"mysentence" : "this is a sentence",
+		"mynumber" : 123,
+		"my_list" : [12213, "name", "21214", 899.0993]
+	}
+
+	return render(request, "about.html", my_dic )
 
 
 def contact_view(request, *args, **kwargs):

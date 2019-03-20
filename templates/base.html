@@ -9,11 +9,17 @@
 </head>
 <body>
 
-
-<h1> This will be on every page</h1>
+{%include "nav.html"%}
 
 {% block content %}
 {% endblock %}
+
+
+<h2> In the middle </h2>
+
+{% block another_content %}
+{% endblock %}
+
 
 
 
