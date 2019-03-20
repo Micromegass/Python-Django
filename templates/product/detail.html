@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+
+
+
+
+{% block content%}
+
+{% if object.title %}
+
+Title : {{object.title}}
+
+{%else%}
+
+Title coming soon
+
+{%endif%}
+
+
+
+{% if object.price %}
+
+Price: {{object.price}}
+
+{%else%}
+
+Price coming soon
+
+{%endif%}
+
+{% endblock %}
+
+

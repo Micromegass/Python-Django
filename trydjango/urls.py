@@ -23,6 +23,7 @@ from pages.views import home_view
 from pages.views import contact_view
 from pages.views import about_view
 from pages.views import social_view
+from products.views import product_detail_view
 
 
 urlpatterns = [
@@ -30,5 +31,6 @@ urlpatterns = [
     url(r'^contact', contact_view, name='contact'),
     url(r'^about', about_view, name='about'),
     url(r'^social', social_view, name='social'),
+    url(r'^product', product_detail_view, name='product'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -15,7 +15,8 @@ def about_view(request, *args, **kwargs):
 	my_dic = {
 		"mysentence" : "this is a sentence",
 		"mynumber" : 123,
-		"my_list" : [12213, "name", "21214", 899.0993]
+		"my_list" : [12213, "name", "21214", 899.0993],
+		"my_html" : "<h1> that is html </h1>"
 	}
 
 	return render(request, "about.html", my_dic )
